@@ -1,0 +1,16 @@
+#LISTAS
+print("Lista de deportes")
+deportes=["futbol"]
+dep=input("Ingresa un deporte: ")
+deportes.append(dep)
+print(deportes)
+dep2=input("Ingresa otro deporte: ")
+deportes.append(dep2)
+print(deportes)
+depBorrar=input("¿Cuál deporte quieres borrar?: ")
+deportes.remove(depBorrar)
+print(deportes)
+dep3=input("Dime otro deporte: ")
+pos=int(input("En que posición lo quieres poner: "))
+deportes.insert(pos,dep3)
+print(deportes)
