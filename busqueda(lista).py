@@ -3,7 +3,7 @@
 print("Lista de busqueda de nombres")
 nombres=["Ángel","Karla","Luis","Mateo","María","Luis","Karla"]
 print(f"Los nombres que se tiene son: {nombres}")
-#Nombre que se dea buscar en la lista 
+#Nombre que se desea buscar en la lista 
 nombreBuscar=input("¿Qué nombre deseas buscar?: ")
 encontrado=False
 contador=0
@@ -22,3 +22,9 @@ if encontrado==True:
 else:
 #Nombre no encontrado
     print("Nombre no encontrado")
+#Eliminar nombre si aparece más de una vez 
+if contador> 1:
+    while nombres.count(nombreBuscar)> 1:
+        nombres.remove(nombreBuscar)
+#Lista nueva
+print("Nueva lista: ", nombres)
