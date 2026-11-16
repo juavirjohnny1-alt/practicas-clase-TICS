@@ -16,5 +16,11 @@ for num in numeros:
     resultados.append(resultado)
 #Lista de números originales
 print("Números originales: ",numeros)
-#Lsiata de resultyados de las multiplicaciones
+#Lista de resultados de las multiplicaciones
 print("Resultados: ",resultados)
+#Buscar un número en los resultados
+buscar=int(input("¿Qué número deseas buscar?: "))
+if buscar in resultados:
+    print("El número si aparece en los resultados")
+else:
+    print("El número no aparece en los resultados")
