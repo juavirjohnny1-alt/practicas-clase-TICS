@@ -1,6 +1,7 @@
 #LISTA:NUMEROS PARES
 print("LISTA DE NUMEROS PARES")
 numeros=[]
+numPares=[]
 i=0
 #Solicitar números
 while i<10:
@@ -12,3 +13,6 @@ print("Números pares: ")
 for num in numeros:
     if num % 2==0:
         print(num)
+        numPares.append(num)
+print("Lista de números pares: ")
+print(numPares)
