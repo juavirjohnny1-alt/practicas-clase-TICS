@@ -14,5 +14,6 @@ for num in numeros:
     if num % 2==0:
         print(num)
         numPares.append(num)
+#Lista de números pares ingresados mostrados en lista 
 print("Lista de números pares: ")
 print(numPares)
